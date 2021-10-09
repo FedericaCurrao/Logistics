@@ -1,0 +1,28 @@
+data;
+set Macchine:= Coupe Minivan;
+set Materiali:= Mat1 Mat2 Mat3;
+set Mesi:= Mese1 Mese2;
+
+param Disponibilita: Mat1 Mat2 Mat3:=
+Mese1 24000 800 5700
+Mese2 19000 1000 7000; 
+
+param Disponibilita2: Mat1 Mat2 Mat3:=
+Mese1 0 0 0
+Mese2 1000 700 500; 
+
+param Requisiti: Coupe Minivan :=
+Mat1 85 60
+Mat2 3 2
+Mat3 20 15;
+
+param Profitto:= 
+Coupe 150
+Minivan 120;
+
+param Produzione:Mese1 Mese2:=
+Coupe 100 100
+Minivan 150 150;
+
+
+
